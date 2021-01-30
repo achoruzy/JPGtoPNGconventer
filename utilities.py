@@ -1,6 +1,5 @@
 import sys
 from os import scandir
-from PIL import Image
 
 # Grab sys.argv arguments
 
@@ -11,7 +10,8 @@ from PIL import Image
 # check if /new exists and if not - create it
 
 
-# Function for converting file from jpg to png
-
-
 # Loop over files in /Pokedex folder
+
+
+if __name__ == "__main__":
+    pass
