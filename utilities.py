@@ -1,16 +1,20 @@
 import sys
 from os import scandir
 
-# Grab sys.argv arguments
 
-# folder_from = sys.argv[1]
-# folder_to = sys.argv[2]
-
-
-# check if /new exists and if not - create it
+# check if a folder exists
+def isFolderExist(loc: str):
+    pass
 
 
-# Loop over files in /Pokedex folder
+# create a folder
+def createFolder(loc: str):
+    pass
+
+
+# Loop over files in a folder
+def loopOverFiles(loc: str):
+    pass
 
 
 if __name__ == "__main__":
