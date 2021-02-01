@@ -1,23 +1,18 @@
 import sys
-import os
-import window as win
 import utilities as util
+import window as win
 import imageutils as imut
 
 folder_from = sys.argv[1]
 folder_to = sys.argv[2]
 format_to = sys.argv[3]
-
-# Loop over files in folder
-
-
-def loopOverFiles():
-    counter = 0
-    for filename in os.listdir(folder_from):
-        counter += 1
-        imut.fileConvert(folder_from + filename, folder_to,
-                         str(counter), format_to)
+new_file_name = 'new_'
 
 
 if __name__ == "__main__":
-    loopOverFiles()
+
+    util.createFolder(folder_to)
+    for i in util.genLoopOverFiles(folder_from):
+        imut.fileConvert(
+            folder_from + str(i[0]), folder_to, new_file_name + str(i[1]), format_to)
+    print('>>> DONE! <<<')
