@@ -1,5 +1,4 @@
 # JPGtoPNGconventer
-v. 0.1
 
 Simple JPG to PNG conventer to use from cmd level.
 Done as a simple exercise for my ZTM course contribution.
